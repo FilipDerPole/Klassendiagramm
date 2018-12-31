@@ -1,0 +1,61 @@
+--- Schule ---
+- addPersonal
+- addAbteilung
+setDirektor		//nachfragen
+getSchulkennzahl
+getName
+getSchultyp
+- getPersonal
+- getSchueler
+- getAnzahlSchueler
+
+--- Abteilung ---
+getName
+getKuerzel
+- getSchueler
+- addLehrer
+- setAbteilungsvorstand
+
+--- Adresse ---
+getOrt
+getSrasse
+getHausnummer
+getPlz
+printAdresse
+
+--- Person ---
+getSvnr
+getVorname
+getNachname
+getGeburtsdatum
+getEmail
+
+--- Mitarbeiter ---
+getAnzahl
+
+--- Schuerler ---
+getKatalognummer
+isEigenberechtigt
+getEintrittsdatum
+
+--- Lehrer ---
+getKuerzel
+- exportStudenenplan
+
+
+
+Assotiationen:
+- Schule					Schueler
+- Schule					Adresse
+- Schule					NichtLehrerpersonal
+Schule						Lehrer
+Schule						Abteilung
+- Adresse					Person
+- Abteilung	(leitet)			Lehrer
+- Abteilung	(unterrichtendeLehrer)		Lehrer
+- Abteilung					Klasse
+- Abteilung					Schueler
+- Lehrer					Fach
+- Lehrer					Klasse
+- Schueler	(ist Klassensprecher von)	Klasse
+- Schueler	(ist Teil von)			Klasse
