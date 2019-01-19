@@ -1,0 +1,21 @@
+
+public class Belegung {
+
+	private int unterrichtsEinheit;
+	
+	public Belegung(int neuunterichtsEinheit){
+		unterrichtsEinheit = neuunterichtseinheit;
+	}
+	
+	public Unterrichtstag getWochentag() {
+			
+	}
+	
+	public Klasse GetKlasse() {
+		
+	}
+	
+	public Lehrer getLehrer() {
+		
+	}
+}

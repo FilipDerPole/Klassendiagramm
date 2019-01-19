@@ -1,0 +1,40 @@
+
+
+public class Raum {
+
+	private String raumNummer;
+	private int maxSitzplaetze;
+	private Raumtyp raumtyp;
+	private Klasse Stammklasse;
+	
+	Stammklasse = NULL;
+
+	private Klasse getStammklasse{
+		return Stammklasse;	
+	}
+
+	public Raum(String raumNu, int maxSitzp, Raumtyp raumt){
+		raumNummer=raumNu;
+		maxSitzplaetze=maxSitzp;
+		raumtyp=raumt;
+	} 
+	
+	public String getRaumNummer() {
+		return raumNummer;
+	}	
+
+	public void exportBelegung() {
+		
+	}
+	
+	public int getMaxSitzplaetze() {
+		return maxSitzplaetze;
+	}
+	
+	public Raumtyp getRaumtyp() {
+		return Raumtyp;	
+	}
+
+	public Raumtyp setRaumtyp(Raumtyp typ){
+		Raumtyp = typ;
+	}

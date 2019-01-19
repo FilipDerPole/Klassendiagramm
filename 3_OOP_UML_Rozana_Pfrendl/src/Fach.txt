@@ -1,0 +1,46 @@
+
+public class Fach {
+
+	private String name;
+	private int wochenstunden;
+	private Raumtyp raumanforderung;
+	
+
+	ArrayList<Lehrer> LehrerListe = new ArrayList<Lehrer>();
+	
+	public Fach(String nam, int wochenst, Raumtyp raumanf){
+		name = nam;
+		wochensttunden = wochenst;
+		raumanforderungen = raumanf;
+	}
+
+	public boolean addLehrer(Lehrer neuLehrer){
+	try{	
+			LehrerListe.add(neuLehrer);
+	}				
+			
+	catch(Exception e){
+		return false;
+	}
+	return true;
+		
+	}	
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getWochenstunden() {
+		return wochenstunden;
+	}
+	
+	public Raumtyp getRaumanforderung() {
+		return raumanforderung;	
+	}
+
+	public Raumtyp setRaumanforderung(Raumtyp raumanf){
+			
+		raumanforderung = raumanf;
+	}
+}
+
