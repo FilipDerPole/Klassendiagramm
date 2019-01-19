@@ -13,6 +13,17 @@ public class Raum {
 		return Stammklasse;	
 	}
 
+	public boolean setStammklasse(Klasse neueStammklasse){
+		try{	
+			Stammklasse=neueStammklasse;
+		}
+			
+		catch(Exception e){
+			return false;
+		}
+		return true;
+	}
+
 	public Raum(String raumNu, int maxSitzp, Raumtyp raumt){
 		raumNummer=raumNu;
 		maxSitzplaetze=maxSitzp;
