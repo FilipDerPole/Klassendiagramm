@@ -8,6 +8,12 @@ public class Fach {
 
 	ArrayList<Lehrer> LehrerListe = new ArrayList<Lehrer>();
 	
+	private Raum zugehoerigerRaum;
+
+	public Raum getzugehoerigenRaum(){
+		return zugehoerigerRaum;
+	}
+
 	public Fach(String nam, int wochenst, Raumtyp raumanf){
 		name = nam;
 		wochensttunden = wochenst;
@@ -15,14 +21,14 @@ public class Fach {
 	}
 
 	public boolean addLehrer(Lehrer neuLehrer){
-	try{	
+		try{	
 			LehrerListe.add(neuLehrer);
-	}				
+		}				
 			
-	catch(Exception e){
-		return false;
-	}
-	return true;
+			catch(Exception e){
+			return false;
+		}
+		return true;
 		
 	}	
 	

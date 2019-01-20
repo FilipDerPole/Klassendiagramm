@@ -9,6 +9,24 @@ public class Raum {
 	
 	Stammklasse = NULL;
 
+	ArrayList<Fach> FaecherListe = new ArrayList<Fach>();
+	
+	private Hashtable htFach;
+
+	htFach.put(Projekt, Beteiligung); 
+	
+	public boolean addfach(Fach neuFach){
+		try{	
+			FaecherListe.add(neuFach);
+		}				
+			
+			catch(Exception e){
+			return false;
+		}
+		return true;
+		
+	}
+
 	private Klasse getStammklasse{
 		return Stammklasse;	
 	}
