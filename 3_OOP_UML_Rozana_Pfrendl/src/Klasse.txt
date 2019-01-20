@@ -7,9 +7,10 @@ public class Klasse {
 	private Raum Stammraum;
 	private Abteilung ZugehoerigeAbteilung;
 	private Fach lernendesFach;
-	
+	private Lehrer Klassenvorstand;	
+
 	lernendesFach = NULL;	
-	
+
 	ArrayList<Schueler> SchuelerListe = new ArrayList<Schueler>();
 	
 	public getFach(){
@@ -19,10 +20,13 @@ public class Klasse {
 	}
 	
 
-	public Klasse(String bezeichn, int schulst, Schueler Klassenspr){
+	public Klasse(String bezeichn, int schulst, Schueler Klassenspr, Schueler neuSchueler, Lehrer neuerKlassenvorstand{
 		bezeichnung = bezeichn;
 		schulstufe = schulst;
 		Klassensprecher = Klassenspr;
+		Klassenvorstand=neuerKlassenvorstand;
+
+		this.addSchueler(neuSchueler); //Stimmt evtl. nicht
 		
 	}
 	
