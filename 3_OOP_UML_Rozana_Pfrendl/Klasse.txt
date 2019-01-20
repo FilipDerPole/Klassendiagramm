@@ -1,0 +1,124 @@
+public class Klasse {
+	
+	private String bezeichnung;
+	private int schulstufe;
+	private int Durchschnittsalter;
+	private Schueler Klassensprecher;
+	private Raum Stammraum;
+	private Fach lernendesFach;
+	private Lehrer Klassenvorstand;	
+	private Abteilung zugehoerigeAbteilung;
+
+	lernendesFach = NULL;	
+
+	ArrayList<Schueler> SchuelerListe = new ArrayList<Schueler>();
+	
+	
+
+	public getFach(){
+		
+		return lernendesFach;
+
+	}
+	
+
+	public Klasse(String bezeichn, int schulst, Schueler Klassenspr, Schueler neuSchueler, Lehrer neuerKlassenvorstand{
+		bezeichnung = bezeichn;
+		schulstufe = schulst;
+		Klassensprecher = Klassenspr;
+		Klassenvorstand=neuerKlassenvorstand;
+
+		this.addSchueler(neuSchueler); //Stimmt evtl. nicht
+		
+	}
+
+	public Abteilung getAbteilung(){
+		return zugehoerigeAbteilung;
+	}
+	
+	public Raum getRaum(){
+		return Raum;
+	} 
+
+	public boolean addSchueler(Schueler neuSchueler){ //max. 36 Schueler, length der Liste < 37!
+		
+		if(SchuelerListe.size() < 37){		
+
+			try{	
+				SchuelerListe.add(neuSchueler);
+			}
+			
+			catch(Exception e){
+				return false;
+			}
+		}				
+		
+		else{	
+			
+			return false;
+
+		}
+
+		return true;
+		
+		//Funktion iterator.getGeburtsdatum verwenden, alter ausrechen (2019-Gebj), mit Iteratier durchschnittsalter brechnen!
+		
+	}
+
+	Schueler varschueler;
+	private Date Geburtsdatum;
+	string alter;
+	int gesamtalter;
+	private Date Datum;
+	
+	for(Iterator<Schueler> Iterator = (Schueler.getSchueler()).iterator(); iterator.hasNext();){
+		
+		varschueler=iterator.next();
+
+		Geburtsdatum = varschueler.getGeburtsdatum();
+		
+		alter = Geburtsdatum.toString();
+		
+		
+		
+		
+	}
+
+	public setKlassensprecher(Schueler Klassenspr){
+		Klassensprecher = Klassenspr;
+	}
+
+		
+	
+	public ArrayList<schueler> getSchueler(Schueler){
+		return Schueler;
+	}
+
+	public String getBezeichnung() {
+		return bezeichnung;
+	}
+	
+	public int getSchulstufe(){
+		return schulstufe;
+	}
+
+	
+	
+	public float getDurschnittsalter(){
+		
+
+		return Durchschnittsalter;
+	}
+	
+	public boolean setKlassensprecher(Schueler neuerKlassensprecher){
+		Klassensprecher=neuerKlassensprecher;
+	}
+	
+	
+	public void exportStundenplan(){
+		
+	}
+	
+
+
+}
