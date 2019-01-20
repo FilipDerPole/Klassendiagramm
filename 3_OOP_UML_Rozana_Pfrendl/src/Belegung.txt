@@ -2,20 +2,21 @@
 public class Belegung {
 
 	private int unterrichtsEinheit;
+	private Unterrichtstag Wochentag;
 	
 	public Belegung(int neuunterichtsEinheit){
 		unterrichtsEinheit = neuunterichtseinheit;
 	}
 	
 	public Unterrichtstag getWochentag() {
-			
+		return Wochentag;
 	}
 	
-	public Klasse GetKlasse() {
-		
+	public Klasse getKlasse(){
+		return Klasse;
 	}
 	
-	public Lehrer getLehrer() {
-		
+	public Lehrer getLehrer(){
+		return Lehrer;	
 	}
 }

@@ -5,14 +5,16 @@ public class Klasse {
 	private int Durchschnittsalter;
 	private Schueler Klassensprecher;
 	private Raum Stammraum;
-	private Abteilung ZugehoerigeAbteilung;
 	private Fach lernendesFach;
 	private Lehrer Klassenvorstand;	
+	private Abteilung zugehoerigeAbteilung;
 
 	lernendesFach = NULL;	
 
 	ArrayList<Schueler> SchuelerListe = new ArrayList<Schueler>();
 	
+	
+
 	public getFach(){
 		
 		return lernendesFach;
@@ -29,8 +31,12 @@ public class Klasse {
 		this.addSchueler(neuSchueler); //Stimmt evtl. nicht
 		
 	}
+
+	public Abteilung getAbteilung(){
+		return zugehoerigeAbteilung;
+	}
 	
-	public RaumKlasse getRaum(){
+	public Raum getRaum(){
 		return Raum;
 	} 
 
@@ -81,13 +87,10 @@ public class Klasse {
 		return Durchschnittsalter;
 	}
 	
-	public boolean setKlassensprecher(){
-		
+	public boolean setKlassensprecher(Schueler neuerKlassensprecher){
+		Klassensprecher=neuerKlassensprecher;
 	}
 	
-	public boolean addSchueler(Schueler schueler 1){
-		
-	}
 	
 	public void exportStundenplan(){
 		

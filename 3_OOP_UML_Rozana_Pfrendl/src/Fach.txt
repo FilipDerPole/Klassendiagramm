@@ -7,7 +7,8 @@ public class Fach {
 	
 
 	ArrayList<Lehrer> LehrerListe = new ArrayList<Lehrer>();
-	
+	ArrayList<Klasse> KlassenListe = new ArrayList<Klasse>();
+
 	private Raum zugehoerigerRaum;
 
 	public Raum getzugehoerigenRaum(){
@@ -30,7 +31,19 @@ public class Fach {
 		}
 		return true;
 		
-	}	
+	}
+
+	public boolean addLehrer(Klasse neuKlasse){
+		try{	
+			KlasseListe.add(neuKlasse);
+		}				
+			
+			catch(Exception e){
+			return false;
+		}
+		return true;
+		
+	}		
 	
 	public String getName() {
 		return name;
