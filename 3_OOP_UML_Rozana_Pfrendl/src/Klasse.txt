@@ -11,7 +11,7 @@ public class Klasse {
 
 	lernendesFach = NULL;	
 
-	ArrayList<Schueler> SchuelerListe = new ArrayList<Schueler>();
+	ArrayList<Schueler> schuelerListe = new ArrayList<Schueler>();
 	
 	
 
@@ -71,8 +71,8 @@ public class Klasse {
 
 		
 	
-	public ArrayList<schueler> getSchueler(Schueler){
-		return Schueler;
+	public ArrayList<schueler> getSchueler(){
+		return schuelerListe;
 	}
 
 	public String getBezeichnung() {
